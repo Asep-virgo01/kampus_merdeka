@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <script src="kalkulator.js"></script>
+    <header>
+        <h2>KALKULATOR</h2>
+    </header>
+
+    <article>
+        <form id="formulir">
+            <label for="angka1">Angka 1</label> 
+            <input type="text" name="a1" value="Masukkan Angka!!" onfocus="placeholdername1()">
+
+            <label for="angka2">Angka 2</label>
+            <input type="text" name="a2" value="Masukkan Angka!!" onfocus="placeholdername2()">
+
+            <label for="hasil">Hasil</label>
+            <input type="text" name="hasil" value="Hasilnya adalah..." disabled />
+        
+    
+        
+        <div id="button">
+            <input type="button" name="penambahan" value="+" onclick="penjumlahan()">
+            <input type="button" name="pengurangan" value="-" onclick="perkurangan()">
+            <input type="button" name="perkalian" value="*" onclick="kali()">
+            <input type="button" name="pembagian" value="/" onclick="bagi()">
+            <input type="button" name="perpangkatan" value="^" onclick="pangkat()">
+            
+            <input type="button" name="batal" value="Batal" onclick="kosongAll()">
+        </div>
+    </form></article>
+</body>
+</html>

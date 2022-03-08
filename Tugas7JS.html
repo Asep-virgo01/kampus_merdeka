@@ -1,0 +1,55 @@
+<script>
+
+
+class Gempa{
+    constructor(lokasi, skala){
+        this.lokasi = lokasi;
+        this.skala = skala;
+    }
+
+dampak(dampaknya){
+
+    if (this.skala >= 0 && this.skala <=2) dampaknya = "dampaknya tidak terasa";
+    else if (this.skala > 2 && this.skala <= 4) dampaknya = "dampaknya bangunan retak-retak";
+    else if (this.skala > 4 && this.skala <= 6) dampaknya = "dampaknya bangunan roboh";
+    else if(this.skala > 6) dampaknya = "dampaknya bangunan roboh dan berpotensi tsunami";
+    else dampaknya ="tiada gempa";
+
+}
+
+cetak(){
+    document.write(`Lokasi Gempa    : ${this.lokasi}<br>
+                    Skala           : ${this.skala}<br>
+                    Dampak          : ${this.dampaknya}`);
+}
+
+    let kota1 = new Gempa('Chicago','5','dampaknya bangunan roboh');
+    let kota2 = new Gempa('Odense','10','dampaknya bangunan roboh dan berpotensi tsunami');
+    let kota3 = new Gempa('Paris','8','dampaknya bangunan roboh dan berpotensi tsunami');
+    let kota4 = new Gempa('Vienne','2','dampaknya tidak terasa');
+    let kota5 = new Gempa('Roma','1', 'dampaknya tidak terasa');
+    let kota6 = new Gempa('Tokyo','7', 'dampaknya bangunan roboh dan berpotensi tsunami');
+    let kota7 = new Gempa('Nhom Phen','6', 'dampaknya bangunan roboh"');
+    let kota8 = new Gempa('Yangoon','9', 'dampaknya bangunan roboh dan berpotensi tsunami');
+    let kota9 = new Gempa('Shanghai','8.5', 'dampaknya bangunan roboh dan berpotensi tsunami');
+    let kota10 = new Gempa('New Delhi','4','dampaknya bangunan retak-retak');
+
+
+}
+cetak(){
+    document.write(`Data Kota1 : ${kota1}<br>
+                    Data Kota2 : ${kota2}<br>
+                    Data Kota3 : ${kota3}<br>
+                    Data Kota4 : ${kota4}<br>
+                    Data Kota5 : ${kota5}<br>
+                    Data Kota6 : ${kota6}<br>
+                    Data Kota7 : ${kota7}<br>
+                    Data Kota8 : ${kota8}<br>
+                    Data Kota9 : ${kota9}<br>
+                    Data Kota10 : ${kota10}<br>`
+
+
+    );
+
+}
+</script>
